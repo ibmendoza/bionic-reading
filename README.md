@@ -12,4 +12,4 @@ How to download:
 6. Click "Load unpacked" and then choose the extracted folder. 
 7. To pin the extension, click the puzzle icon on the top right of Chrome, then pin the extension.
 
-
+Difference from ansh: This only renders the first 3 letters in bold if the word length is greather than 3 letters.
