@@ -23,9 +23,9 @@ function convertToReadableText() {
       .split(' ')
       .map((word) => {
         if (word.length > 3) {
-          const firstHalf = word.substring(0, 3);
-          const secondHalf = word.substring(3)
-          const htmlWord = `<br-bold class="br-bold">${firstHalf}</br-bold>${secondHalf}`
+          const first = word.substring(0, 3);
+          const second = word.substring(3)
+          const htmlWord = `<br-bold class="br-bold">${first}</br-bold>${second}`
           return htmlWord
         } else {
           return word
