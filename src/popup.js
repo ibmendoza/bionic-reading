@@ -11,23 +11,25 @@ changeColor.addEventListener("click", async () => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    function: convertToReadbaleText,
+    function: convertToReadableText,
   });
 });
 
 // The body of this function will be executed as a content script inside the current page
-function convertToReadbaleText() {
+function convertToReadableText() {
 	// making half of the letters in a word bold
 	function highlightText(sentenceText) {
     return sentenceText
       .split(' ')
       .map((word) => {
-        const length = word.length
-        const midPoint = Math.round(length / 2)
-        const firstHalf = word.slice(0, midPoint)
-        const secondHalf = word.slice(midPoint)
-        const htmlWord = `<br-bold class="br-bold">${firstHalf}</br-bold>${secondHalf}`
-        return htmlWord
+        if (word.length > 3) {
+          const firstHalf = word.substring(0, 3);
+          const secondHalf = word.substring(3)
+          const htmlWord = `<br-bold class="br-bold">${firstHalf}</br-bold>${secondHalf}`
+          return htmlWord
+        } else {
+          return word
+        }
       })
       .join(' ')
   }
