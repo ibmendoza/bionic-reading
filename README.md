@@ -1,5 +1,5 @@
 # bionic-reading
-A Chrome Extension for Bionic Reading on ANY website. Disclaimer: Bionic Reading is [patented](https://github.com/ansh/bionic-reading/issues/23)
+A Chrome Extension for Bionic Reading on ANY website. **Disclaimer**: Bionic Reading is [patented](https://github.com/ansh/bionic-reading/issues/23)
 
 This extension was made by [ansh](https://github.com/ansh/bionic-reading) on May 20th in about 15 minutes of coding time. Please forgive any bugs as it hasn't been widely tested. Feel free to report them in Github Issues. Also, feel free to open a PR to fix any issues and he will review them quickly.
 
